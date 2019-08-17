@@ -13,12 +13,7 @@ stages:
 - stage: Build
   displayName: Build stage
   jobs:
-  - job: KafkaApiTaskCreate
-    displayName: KAfka Api Update and Delete
-    pool:
-      vmImage: $(vmImageName)
-    
--   steps:
+- steps:
     - task: Created topic "testTopic"
  	apiVersion: batch/v1
 	kind: Job
